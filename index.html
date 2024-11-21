@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./src/output.css" />
+    <title>Frontend Mentor | Notifications page</title>
+  </head>
+  <body class="box-border font-custom bg-main-bg text-sm">
+    <section
+      class="design w-mobile md:max-w-2xl md:p-6 md:my-10 mx-auto bg-White text-normal-color"
+    >
+      <header
+        class="design__header py-6 flex justify-between items-center"
+      >
+        <h1
+          class="design__title text-name text-xl font-bold"
+        >
+          Notifications
+          <span
+            class="amount inline-block text-White ml-3 py-2 px-4 bg-primary-blue rounded-lg"
+            >3</span
+          >
+        </h1>
+        <span
+          class="mark-read hover:cursor-pointer hover:text-primary-blue"
+          >Mark all as read</span
+        >
+      </header>
+      <ul class="design__body">
+        <li
+          class="notification__box p-4 flex gap-4 items-center mb-3 rounded-lg unread bg-notification-bg-unread"
+        >
+          <div class="notification__image w-10 h-10">
+            <img
+              class=""
+              src="./assets/images/avatar-mark-webber.webp"
+              alt="Mark Webber Photo"
+            />
+          </div>
+          <div class="notification__text flex-shrink-5">
+            <span
+              class="name hover:cursor-pointer hover:text-primary-blue text-name font-bold mr-2"
+              >Mark Webber</span
+            >reacted to your recent post
+            <span
+              class="post hover:cursor-pointer hover:text-primary-blue ml-1 text-post font-bold"
+              >My first tournament today!</span
+            ><span
+              class="circle translate-y-0.5 inline-block ml-1 h-3 w-3 rounded-md bg-primary-red"
+            ></span
+            ><span class="time block">1m ago</span>
+          </div>
+        </li>
+        <li
+          class="notification__box p-4 flex gap-4 items-center mb-3 rounded-lg unread bg-notification-bg-unread"
+        >
+          <div class="notification__image w-10 h-10">
+            <img
+              class=""
+              src="./assets/images/avatar-angela-gray.webp"
+              alt="Angela Gray Photo"
+            />
+          </div>
+          <div class="notification__text flex-shrink-5">
+            <span
+              class="name hover:cursor-pointer hover:text-primary-blue text-name font-bold mr-2"
+              >Angela Gray</span
+            >followed you<span
+              class="post hover:cursor-pointer hover:text-primary-blue ml-1 text-post font-bold"
+            ></span
+            ><span
+              class="circle translate-y-0.5 inline-block ml-1 h-3 w-3 rounded-md bg-primary-red"
+            ></span
+            ><span class="time block">5m ago</span>
+          </div>
+        </li>
+        <li
+          class="notification__box p-4 flex gap-4 items-center mb-3 rounded-lg unread bg-notification-bg-unread"
+        >
+          <div class="notification__image w-10 h-10">
+            <img
+              class=""
+              src="./assets/images/avatar-jacob-thompson.webp"
+              alt="Jacob Thompson Photo"
+            />
+          </div>
+          <div class="notification__text flex-shrink-5">
+            <span
+              class="name hover:cursor-pointer hover:text-primary-blue text-name font-bold mr-2"
+              >Jacob Thompson</span
+            >
+            has joined your group<span
+              class="group hover:cursor-pointer hover:text-primary-blue ml-1 text-primary-blue font-bold"
+              >Chess Club</span
+            ><span
+              class="circle translate-y-0.5 inline-block ml-1 h-3 w-3 rounded-md bg-primary-red"
+            ></span
+            ><span class="time block">1 day ago</span>
+          </div>
+        </li>
+        <li
+          class="notification__box p-4 flex gap-4 items-center mb-3 rounded-lg"
+        >
+          <div class="notification__image w-10 h-10">
+            <img
+              class=""
+              src="./assets/images/avatar-rizky-hasanuddin.webp"
+              alt="Rizky Hasanuddin Photo"
+            />
+          </div>
+          <div class="notification__text flex-shrink-5">
+            <span
+              class="name hover:cursor-pointer hover:text-primary-blue text-name font-bold mr-2"
+              >Rizky Hasanuddin</span
+            >
+            sent you a private message<span
+              class="time block"
+              >5 days ago</span
+            ><span
+              class="msg block my-2 p-4 border-2 hover:cursor-pointer hover:bg-active-msg"
+              >Hello, thanks for setting up the Chess Club.
+              I've been a member for a few weeks now and I'm
+              already having lots of fun and improving my
+              game.</span
+            >
+          </div>
+        </li>
+        <li
+          class="notification__box flex items-center justify-between p-4 mb-3 rounded-lg"
+        >
+          <div
+            class="flex gap-4 items-center flex-shrink-5"
+          >
+            <div class="notification__image w-10 h-10">
+              <img
+                class=""
+                src="./assets/images/avatar-kimberly-smith.webp"
+                alt="Kimberly Smith Photo"
+              />
+            </div>
+            <div class="notification__text flex-shrink-5">
+              <span
+                class="name hover:cursor-pointer hover:text-primary-blue text-name font-bold mr-2"
+                >Kimberly Smith</span
+              >
+              commented on your picture<span
+                class="post hover:cursor-pointer hover:text-primary-blue ml-1 text-post font-bold"
+              ></span
+              ><span class="time block">1 week ago</span>
+            </div>
+          </div>
+          <div
+            class="notification__element pl-2 w-10 h-10 rounded-md hover:cursor-pointer"
+          >
+            <img
+              class=""
+              src="./assets/images/image-chess.webp"
+              alt="image chess"
+            />
+          </div>
+        </li>
+        <li
+          class="notification__box p-4 flex gap-4 items-center mb-3 rounded-lg"
+        >
+          <div class="notification__image w-10 h-10">
+            <img
+              class=""
+              src="./assets/images/avatar-nathan-peterson.webp"
+              alt="Nathan Peterson Photo"
+            />
+          </div>
+          <div class="notification__text flex-shrink-5">
+            <span
+              class="name hover:cursor-pointer hover:text-primary-blue text-name font-bold mr-2"
+              >Nathan Peterson</span
+            >reacted to your recent post<span
+              class="post hover:cursor-pointer hover:text-primary-blue ml-1 text-post font-bold"
+              >5 end-game strategies to increase your win
+              rate</span
+            ><span class="time block">2 weeks ago</span>
+          </div>
+        </li>
+        <li
+          class="notification__box p-4 flex gap-4 items-center mb-3 rounded-lg"
+        >
+          <div class="notification__image w-10 h-10">
+            <img
+              class=""
+              src="./assets/images/avatar-anna-kim.webp"
+              alt="Photo"
+            />
+          </div>
+          <div class="notification__text flex-shrink-5">
+            <span
+              class="name hover:cursor-pointer hover:text-primary-blue text-name font-bold mr-2"
+              >Anna Kim</span
+            >
+            left the group<span
+              class="group hover:cursor-pointer hover:text-primary-blue ml-1 text-primary-blue font-bold"
+              >Chess Club</span
+            ><span class="time block">2 weeks ago</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <script src="./main.js"></script>
+  </body>
+</html>
